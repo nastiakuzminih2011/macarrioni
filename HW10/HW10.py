@@ -6,7 +6,7 @@ Created on Sun Feb 18 12:46:31 2018
 """
 import random
 
-with open('C:/Users/Анастасия/Desktop/python/HW10/Word.txt', 'r', encoding='utf-8') as f:
+with open('Word.txt', 'r', encoding='utf-8') as f:
     text = f.read().split()
     
 text[0] = text[0][1:]
