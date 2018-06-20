@@ -36,7 +36,7 @@ f.write(", ".join(cols) + "\n")
 for filename in spisok:
     new_f = os.path.join(folder, filename)
     file_read = open(new_f, 'r').read()
-    words = re.findall(r'<w><ana lex="[А-ЯA-Z]+[^<]+</ana>([^<]+)</w>', file_read)
+    words = re.findall(r'<w><ana lex="[А-ЯA-Z]{2,}[^<]+</ana>([^<]+)</w>', file_read)
     for name in words:
         dictionary[name] += 1
 
